@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allura|Liu+Jian+Mao+Cao&display=swap');
+
+html {
+    background: black;
+}
+
+body {
+    margin: 0;
+    padding:0;
+    background: url('../images/pizza-bg-long-2.jpg');
+    background-attachment:scroll;
+    background-position: top;
+    background-size:auto;
+    background-size: 1200px;            
+    font-size: 1.1em;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.header-wrapper {
+    max-width: 1200px;
+    height: 77px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    
+    .logo {
+        font-family: 'Crimson Text', serif;
+        font-size:1.82em;
+        font-variant: small-caps;
+        font-weight: 100;
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        padding-left: 5px;
+        margin-left: .5em;
+        margin-top: .5em;
+        text-decoration: none;
+        color:white;
+    }
+
+    .logo:hover {
+        background: rgba(255, 255, 255, 0.2);
+        color: green;
+        font-weight: light;
+    }
+
+    nav {
+        margin-right: 1em;
+        position: absolute;
+        right: -1em;
+
+        a {
+            color: green;
+            font-size: 1.1em;
+            text-decoration: none;
+            display: inline-block;
+            height: 100%;
+            padding: 20px 1em 0 1em;
+            font-weight: lighter; 
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        a.active {
+            background: green;
+            color: white;
+            border-bottom: 5px solid white;
+        }
+    
+        a:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            background: rgba(255, 255, 255, 0.2);
+            transition: 0.5s;
+        }
+
+        a:before {
+            bottom: -100%;
+        }
+
+        a:hover:before {
+            bottom: 0%;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8); 
+    margin-top: 77px;  
+}
+
+.hero-wrapper {
+    padding: 1em;
+    text-align: center;
+
+    h1 {
+        font-family: 'Crimson Text', serif;
+        font-size: 4em;
+        font-variant: small-caps;
+        font-weight: 100;
+        margin-top: .3em;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-family: 'Allura', cursive;
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: gold;
+    }
+
+    .shamrock {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background: gold;
+        position: relative;
+        margin: auto;
+        z-index: 2;
+    
+        img {
+            position: absolute;
+            width: 38px; 
+            top: 4px;
+            left: 6px;
+        }
+    }
+
+    hr {
+        border-top: 1px solid green;
+        border-bottom: none;
+        position: relative;
+        margin: 0;
+        top: -25px;
+        z-index: 1;
+    }
+}
+
+main, aside, section, footer {
+    padding: 1em;
+}
+
+.content-wrapper {
+
+    .order-content-wrapper {
+        display: grid;
+        grid-template-columns: 60% 40%;
+
+        main, aside {
+            grid-column: auto;
+        }
+
+        aside {
+            margin-right: 1em;
+
+            p {
+                line-height: 2em;
+            }
+        }
+    }
+
+    .info {
+        min-height: 450px;
+        width: 100% auto;
+        margin: 0 auto;
+        position: relative;
+        padding: 1em;
+        
+        h2 {
+            font-size: 2em;
+            
+            span {
+                font-family: 'Crimson Text', serif;
+                font-size:1.2em;
+                font-variant: small-caps;
+                font-weight: 100;
+                display: inline;
+                margin-left: -5px;
+                margin-right: 4px;
+            }
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height:2em;
+        }
+
+        .coupon {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 2em;
+            border-radius: 15px;
+            position: relative;
+            display: flex;
+
+            .coupon-details {
+                margin-left: 2em;
+            }
+
+            h3 {
+                margin: 0;
+                font-size: 1.6em;
+                display: inline-block;
+            }
+
+            p {
+                line-height:1em;
+            }
+
+            .coupon-button {  
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                margin-bottom: 2em;
+                margin-right: 2em
+            }
+
+            .coupon-icon {
+                background: url('../images/beer.jpg');
+                background-size: 340px;
+                background-position: center;
+                background-position-x: -95px;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+
+    }
+}
+
+form {
+    z-index: 5;
+
+    p {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        /* width: 40% 60%; */
+    }
+}
+
+label, input, textarea {
+    display: grid-row; width: 100%;
+}
+
+input, textarea {
+    font-family: 'Montserrat';
+    padding: 0 1em;
+}
+
+.form-buttons {
+    display: flex;
+
+    button:nth-child(2) {
+        margin-left: 2em;
+    }
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid green;
+}
+
+legend {
+    font-size: 1.4em;
+    padding: 0 0.5em;
+    font-family: 'Allura', cursive;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: gold;}
+
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    margin: 0 auto;
+    text-align: center;
+    font-size: .9em;
+
+    a {
+        text-decoration: none;
+        font-family: 'Allura', cursive;
+        font-size: 1.6em;
+        color: lime;
+    }
+   
+    img {
+        margin-top: 1em;
+        width: 100px;
+    }
+}
+
+/* Customized CSS for overriding styles on radio buttons and checkboxes */
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: gray;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: green;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container.container-radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+                            
+/* Create a custom radio button */
+.checkmark.box {
+    border-radius: 0%;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    border-radius: 0%;
+}
+
+.container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Custom CSS for Input Buttons */
+
+button  {
+    /* button reset code (chrome) */
+    -webkit-appearance: inherit;
+    -webkit-writing-mode: inherit;
+    text-rendering: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    text-transform: inherit;
+    text-indent: inherit;
+    text-shadow: inherit;
+    display: inherit;
+    text-align: inherit;
+    align-items: inherit;
+    cursor: inherit;
+    background-color: inherit;
+    box-sizing: inherit;
+    margin: inherit;
+    font: inherit;
+    padding: inherit;
+    border-width: inherit;
+    border-style: inherit;
+    border-color: inherit;
+    border-image: inherit;
+}
+
+button {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background: green;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.335);
+    transition: 0.5s;
+}
+
+button[type=reset]:before {
+    right: -100%;
+}
+
+button[type=reset]:hover:before {
+    right: 0%;
+}
+
+button[type=submit]:before {
+    left: -100%;
+}
+
+button[type=submit]:hover:before {
+    left: 0%;
+}
+
+span {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}

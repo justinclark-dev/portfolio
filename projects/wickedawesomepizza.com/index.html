@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wicked Awesome Pizza</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header>
+       <div class="header-wrapper">
+            <a href="../../projects/wickedawesomepizza.com/" class="logo">W</a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="thanks.html">Thanks</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="hero-wrapper">
+            <h1>Wicked Awesome Pizza</h1>
+            <p>
+                Best Pizza in Boston!
+            </p>
+            <div class="shamrock">
+                <img src="images/shamrock.png" alt="">
+            </div>
+            <hr>
+            
+        </div>
+
+        <div class="content-wrapper">
+            <div class="order-content-wrapper">
+                <main>
+                    <section>
+
+                        <h2>What kind of Awesome would you like today?</h2>
+
+                        <form action="handlers/order-pizza.php" method="POST">
+
+                            <fieldset>
+                                <legend>
+                                    Pizza Crust
+                                </legend>
+
+                                <label class="container container-radio">New York Style
+                                    <input type="radio" name="crust">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container container-radio">Hand Tossed
+                                    <input type="radio" name="crust">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container container-radio">Pan
+                                    <input type="radio" name="crust">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container container-radio">Deep Dish
+                                    <input type="radio" name="crust">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>
+                                    Meats
+                                </legend>
+
+                                <label class="container container-checkbox">Pepperoni
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                                <label class="container container-checkbox">Sausage
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                                <label class="container container-checkbox">Bacon
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                                <label class="container container-checkbox">Ham
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                                <label class="container container-checkbox">Meatballs
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>
+                                    Veggies
+                                </legend>
+
+                                <label class="container container-checkbox">Mushrooms
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                                <label class="container container-checkbox">Onions
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                                <label class="container container-checkbox">Red Peppers
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                                <label class="container container-checkbox">Green Peppers
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                                <label class="container container-checkbox">Olives
+                                    <input type="checkbox">
+                                    <span class="checkmark box"></span>
+                                </label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>
+                                    Delivery or Pickup
+                                </legend>
+                                <label class="container container-radio">Delivery
+                                    <input type="radio" name="order-type">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container container-radio">Pickup
+                                    <input type="radio" name="order-type">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p>
+                                    <label for="date">Pickup/Delivery Date:</label>
+                                    <input type="date" name="date" id="date">
+                                </p>
+                                <p>
+                                    <label for="time">Pickup/Delivery Time:</label>
+                                    <input type="time" name="time" id="time">
+                                </p>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Customer Info</legend>
+                                <p>
+                                    <label for="first-name">First Name:</label>
+                                    <input type="text" name="first_name" id="first-name">
+                                </p>
+                                <p>
+                                    <label for="last-name">Last Name:</label>
+                                    <input type="text" name="last_name" id="last-name">
+                                </p>
+                                <p>
+                                    <label for="phone">Phone:</label>
+                                    <input type="tel" name="phone" id="phone">
+                                </p>
+                                <p>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email">
+                                </p>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>
+                                    Additional Info
+                                </legend>
+        
+                                    <p>
+                                        <label for="comments">Comments:</label>
+                                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                                    </p>
+                                    <p class="form-buttons">
+                                        <button type="reset"><span class="button-span">Start over</span></button>
+                                        <button type="submit"><span class="button-span">Gimme this one</span></button>
+                                    </p>
+                            </fieldset>
+
+                        </form>
+                    </section>
+                </main>
+
+                <aside>
+                    <section>
+                        <h2>Our pizza philosophy</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio velit deleniti tempore dolorem? Maiores ipsum quam enim aliquid facilis!</p>
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia esse sed laboriosam repellendus dolorum in soluta odio. Vero quo rerum repellat nisi hic atque saepe temporibus quam voluptate! Optio officia eum numquam, sapiente, laboriosam saepe aliquam cupiditate voluptatibus dolores dolorum similique quae tempore harum aliquid.</p>
+
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea laudantium obcaecati, doloribus ullam eveniet suscipit.</p>
+
+                        <h2>Pizza sauce runs through our veins</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vitae.</p>
+
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ullam unde vitae deleniti necessitatibus provident consequuntur quia. Reiciendis accusamus minus tempore amet sit molestiae saepe!</p>
+
+                        <h2>We make fresh sauce everyday</h2>
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos recusandae error soluta consequatur ratione id voluptate quidem amet, aspernatur ipsum?</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere blanditiis quas nemo! Harum deserunt qui incidunt cumque voluptates consectetur ipsa officiis veritatis perspiciatis aliquid repellat ducimus repudiandae beatae magnam, vel quis dolorum, cum at iusto? Eos, recusandae?</p>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2020 <a href="../../">Justin Clark</a></p>
+        
+        <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F%7Ejclark%2Fit111%2Fassignments%2Fhw5%2F">
+            <img src="images/HTML5-White.svg" alt="HTML5 Valid Logo">
+        </a>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+
+$color-variable: red;
+$main-bg: rgba(0, 0, 0, 0.7);
+$hero-dark: rgba(0, 0, 0, 0.6);
+$dark-bg: rgba(0, 0, 0, 0.9);
+
+body {
+    margin: 0;
+    background: black url('../images/lamborghini.jpg');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Roboto,Helvetica Neue,Arial;
+    font-size: 1.1em;
+}
+
+.wrapper {
+    background: $main-bg;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-top: 2em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: $dark-bg;
+    padding: 1em 2em;
+    position: relative;
+
+    .logo {
+        font-weight: bold;
+        font-variant-caps: small-caps;
+    }
+
+    .logo:hover {
+        color: white;
+    }
+
+    a {
+        color: $color-variable;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    nav {
+        position: absolute;
+        right: 0;
+        a {
+            text-transform: uppercase;
+            font-size: 1em;
+            padding: 18px 2em;
+        }
+
+        a.active {
+            background: rgba(255, 255, 255, 0.6);
+            color: black;
+            border-bottom: 4px solid white;
+        }
+    
+        a:hover {
+            background: rgba(255, 255, 255, 0.4);
+            color: black;
+            border-bottom: 4px solid red;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+}
+
+.hero-bg {
+    background: $hero-dark;
+    height: 240px;
+
+    .hero-section {
+        padding: 1em 2em;
+
+        h1 {
+            font-size: 4em;
+        }
+    
+        p {
+            font-size: 1.2em;
+            margin-top: 1em;
+            margin-bottom: -7em;
+        }
+    }
+}
+
+.main-content {
+    overflow: auto;
+
+    main {
+        padding: 1em 2em;
+        width: 65%;
+        height: 100vh;
+        float: left;
+        background: rgba(128, 128, 128, 0.623);
+
+        h2 {
+            margin-top: 1em;
+        }
+        
+        p {
+            line-height: 1.8em;
+            text-align: justify;
+            letter-spacing: 1.2px;
+            margin-bottom: 2em;
+            font-family: 'Montserrat';
+        }
+
+        .front {
+            float: left;
+            display: flex;
+            margin-right: 1em;
+        }
+
+        .back {
+            float: right;
+            display: flex;
+            margin-left: 1em;
+        }
+    }
+
+    aside {
+        padding: 1em 2em;
+        width: 15%;
+        height: 100vh;
+        float: right;
+        background: rgba(255, 255, 255, 0.6);
+        color: black;
+        
+        p {
+            line-height: 1.8em;
+            letter-spacing: -1px;
+            font-family: 'Montserrat';
+            font-size: large;
+        }
+    }
+
+    .image-container {
+        img {
+            max-width: 800px;
+            min-width: 600px;
+            margin: auto;
+            display: block;
+        }
+    }
+}
+
+footer {
+    margin: 0 auto;
+    margin-top: 3.5em;
+    padding: 4em;
+    text-align: center;
+    font-size: .8em;
+    background: $dark-bg;
+
+    img {
+        margin-top: 1em;
+        width: 100px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-decoration-color: red;
+    }
+}
+

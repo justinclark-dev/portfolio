@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things!</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    
+        body {
+            background-image: url('images/gang.png');
+            font-family: Verdana,  sans-serif;
+            color: #fff;
+        }
+    
+        #wrapper {
+            width: 940px;
+            margin: 20px auto 10px auto;
+            padding: 20px;
+            background: rgba(68, 68, 68, .94);
+            border-left: 10px solid #777;
+            border-bottom: 5px solid #777;
+        }
+    
+        img  {
+            float: right;
+            padding-left: 30px;
+        }
+    
+        h1 {
+            font-size: 2.5em;
+            font-family: Georgia, "Times New Roman", Times, serif;	
+        }
+    
+        h2 {
+            font-size: 2em;
+            font-family: Georgia, "Times New Roman", Times, serif;	
+            padding-bottom: .3em;
+            color: #f00;
+        }
+    
+        h3 {
+            font-size: 1.5em;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            padding-bottom: .3em;
+            color: #ff0000;
+        }
+    
+        p {
+            line-height: 1.5em;
+            padding-bottom: 1.5em;
+        }
+    
+        ul {
+            margin-left: 40px;
+        }
+    
+        a {
+            color: #ffff00;	
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <h1>Stranger Things</h1>
+
+        <h2>Can you believe it?</h2>
+
+        <img src="images/winona.png" alt="Winona and kids">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in magna ante. In risus orci, fermentum quis arcu ut, varius auctor dui. Curabitur eget condimentum nulla. <strong>Praesent dignissim urna diam, sit amet vestibulum libero porttitor eget.</strong> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin non tristique urna. Pellentesque id tincidunt ligula. </p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in magna ante. In risus orci, fermentum quis arcu ut, varius auctor dui. Curabitur eget condimentum nulla. Praesent dignissim urna diam, sit amet vestibulum libero porttitor eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin non tristique urna. Pellentesque id tincidunt ligula. </p>
+        
+        <h2>And, will Will ever be the same?</h2>
+
+        <img src="images/stranger-things.jpg" alt="Stranger Things">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in magna ante. In risus orci, fermentum quis arcu ut, varius auctor dui. Curabitur eget condimentum nulla. Praesent dignissim urna diam, sit amet vestibulum libero porttitor eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin non tristique urna. Pellentesque id tincidunt ligula. </p>
+        
+        <h3>Our favorite characters!</h3>
+
+        <ul>
+            <li><a href=""><i>Will</i></a></li>
+            <li><a href=""><i>Lucas</i></a></li>
+            <li><a href=""><i>Eleven</i></a></li>
+            <li><a href=""><i>Mike</i></a></li>
+            <li><a href=""><i>Dustin</i></a></li>
+        </ul>
+
+    </div>
+    
+    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F~jclark%2Fit111%2Fassignments%2Fhw2%2F">
+        <img src="../../images/HTML5-White.svg" alt="HTML5 Valid Logo" style="background: black; width: 100px; padding-right:30px;">
+    </a>
+    
+    <!--To receive the highest possible grade, you MUST declare the errors between the comment tags-->
+
+    <!--Error 1   doctype instead of DOCTYPE  -->
+    <!--Error 2   beginning <html> should be <html lang="en"> in order for screen readers to work properly for accessibility purposes  -->
+    <!--Error 3   title tag <title>Stranger Things!</title> is missing  -->
+    <!--Error 4   css all selector "*" is opening incorrectly, need to replace "}" with "{" right after the "*"  -->
+    <!--Error 5   closing </head> tag before closing the still opened <style> tag  -->
+    <!--Error 6   opening <style> tag after the closing </head> tag should be a closing </style> tag above the closing </head> tag  -->
+    <!--Error 7   in css "body" selector, "background-img" should be "background-image"  -->
+    <!--Error 8   in css "body" selector, url needs to be between the colon ":" and opening paren "("  -->
+    <!--Error 9   in css "body" selector, the actual url for the image must be enclosed in parenthesis ('images/gang.png')  -->
+    <!--Error 10  in css "body" selector, "font-color" should simply be "color" -->
+    <!--Error 11  css selector for "the wrapper div" should be "#wrapper" or "div#wrapper", but not "<div id wrapper>"  -->
+    <!--Error 12  in css "#wrapper" selector, margins missing css units like "px" after "10" in "20px auto 10 auto"  -->
+    <!--Error 13  in css "#wrapper" selector, border-left is missing css units like "px" after "10" in "10 solid 777"  -->
+    <!--Error 14  in css "#wrapper" selector, border-left is missing a pound sign "#" before the "777" hex color in "10 solid 777"  -->
+    <!--Error 15  in css "#wrapper" selector, border-left is missing closing semi-colon ";"  -->
+    <!--Error 16  there is no "image" selector, should be replaced with "img"  -->
+    <!--Error 17  in css "img" selector, "align" attribute, should be "float"  -->
+    <!--Error 18  in css "img" selector, "padding:left" should be "padding-left"  -->
+    <!--Error 19 in css "h1" selector, "size" should be "font-size" -->
+    <!--Error 20 in css "h2" selector, "size" should be "font-size" -->
+    <!--Error 21  in css "h3" selector, the hex color has one too many zeros, "#ff00000" should be "#ff0000"  -->
+    <!--Error 22  in css "p" selector, "line height" should be "line-height": 1.5;-->
+    <!--Error 23  in css "p" selector, "line-height" of "1.5" is missing css units like "em"  -->
+    <!--Error 24  in css "p" selector, "padding-bottom" of "1.5" is missing css units like "em"  -->
+    <!--Error 25  in css "a" selector, the hex color is missing a zero at the end to make it yellow, so "#ffff0" should be "#ffff00"  -->
+    <!--Error 26  in the <img> tag, "image" should be "images"  -->
+    <!--Error 27  the "wrapper" div is invalid, '<div="wrapper">' should be '<div id="wrapper">'  -->
+    <!--Error 28  all of the list items should be enclosed in an "<ul></ul>" unordered list  -->
+    <!--Error 29  the extra '<a href="">' should be deleted from the beginning of '<a href=""><li><i><a href="">Will</a><i></li>'  -->
+    <!--Error 30  '<a href="">' should come after '<li><i>' in '<a href=""><li><i>Lucas</a></i><li>'  -->
+    <!--Error 31  list item not properly closed '...Lucas</a></i><li>' should be '...Lucas</a></i></li>'  -->
+    <!--Error 32  '<a href="">' should come after '<li><i>' in '<a href=""><li><i>Eleven</a><i></li>''   -->
+    <!--Error 33  '<a href="">' should come after '<li><i>' in '<a href=""><li><i>Mike</a></i></li>'  -->
+    <!--Error 34  '<a href="">' should come after '<li><i>' in '<a href=""><li><i>Dustin</a></i><li>'  -->
+    <!--Error 35  list item not properly closed '...Dustin</a></i><li>' should be '...Dustin</a></i></li>'  -->
+    <!--Error 36  the closing tag for the "wrapper" div should be </div>, not </wrapper>  -->
+
+    <!-- after using the validator more errors were found, I'll condense these errors, I hope that's ok... -->
+
+    <!--Error 37  all the list items had their <a> and <i> tags improperly nested, '<i><a href="">...</a></i>' should be '<a href=""><i>...</i></a>'  -->
+    
+</body>
+</html>

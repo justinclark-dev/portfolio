@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap");
+body {
+  margin: 0;
+  background: #044972;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 1.1em;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.hero-wrapper {
+  background: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  font-weight: bold;
+}
+
+header a {
+  color: #022133;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+header a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: dodgerblue;
+          text-decoration-color: dodgerblue;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  padding: 0 .6em;
+}
+
+.hero-bg {
+  background: white;
+  height: 240px;
+  padding: 1em 2em;
+  position: relative;
+}
+
+.hero-bg img {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.hero-bg h1, .hero-bg p {
+  color: #022133;
+}
+
+.hero-bg h1 {
+  font-size: 2.8em;
+  margin-top: 2em;
+}
+
+.hero-bg p {
+  font-size: 1.2em;
+  margin-top: -1.5em;
+}
+
+main {
+  margin: 3.5em 2em;
+}
+
+main p {
+  margin-bottom: 2em;
+}
+
+.footer-wrapper {
+  background: #022133;
+  height: 300px;
+}
+
+.footer-wrapper footer {
+  margin: 0 auto;
+  margin-top: 3.5em;
+  padding: 4em;
+  text-align: center;
+  font-size: .8em;
+}
+
+.footer-wrapper img {
+  margin-top: 1em;
+  width: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-bg img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* fix navigation */
+}
+/*# sourceMappingURL=main-no-float.css.map */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waldo</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            color:#666666;
+        }
+
+        h1, h2, h3  {
+            font-family:Georgia, "Times New Roman", Times, serif;	
+            color:#F00;
+        }
+
+        img {
+            float:right;
+            padding:0 0 20px 20px;
+            /* width: 391px; */
+        }
+
+        .wrapper  {
+            width:960px;
+            margin:auto;	
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <h1>Where is Waldo?</h1>
+
+        <h2>Finding Waldo</h2>
+
+        <img src="images/waldo.jpg" alt="Picture of a very large group of people all dressed up as Waldo.">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Nam id magna lectus.</strong> Curabitur scelerisque rutrum turpis, ut mollis tortor euismod sit amet. Vestibulum id tortor et ipsum congue laoreet. Nullam neque nisi, consequat eget mattis eget, tempus vel turpis. Aliquam sagittis placerat diam ac accumsan. Vivamus mollis volutpat turpis quis lacinia. Nunc tempus mi et elit auctor ac eleifend ante pharetra. Phasellus viverra magna quis justo malesuada suscipit. Donec diam dolor, gravida et varius non, congue sit amet massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec consectetur mauris venenatis libero cursus scelerisque. Duis tempus pretium ante quis blandit.</p>
+
+        <h2><em>My Headline 2!</em></h2>
+        <p>Phasellus sed libero libero, quis vestibulum arcu. In hac habitasse platea dictumst. Ut non felis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras placerat augue sed lorem commodo scelerisque.</p>
+
+        <p>Aliquam sagittis placerat diam ac accumsan. Vivamus mollis volutpat turpis quis lacinia. Nunc tempus mi et elit auctor ac eleifend ante pharetra. Phasellus viverra magna quis justo malesuada suscipit.</p>
+
+        <hr>
+        <ul>
+            <li>Homework 1</li>
+            <li>Homework 2</li>
+            <li>Homework 3</li>
+            <li>Homework 4</li>
+            <li>Homework 5</li>
+            <li>Homework 6</li>
+        </ul>
+
+        <!--Error 1   doctype instead of DOCTYPE  -->
+        <!--Error 2   beginning <html> should be <html lang="en"> in order for screen readers to work properly for accessibility purposes -->
+        <!--Error 3   hex color should beging with #  -->
+        <!--Error 4   the "image" selector should be "img" in css  -->
+        <!--Error 5   body tag begins before head tag ends  -->
+        <!--Error 6   wrapper is not a tag, it should be class on a div tag <div class="wrapper"></div>  -->
+        <!--Error 7   the <h2></h2> header should come after the <h1></h1> header  -->
+        <!--Error 8   the <h1> tag is improperly closed, should be <h1>Where is Waldo?</h1>  -->
+        <!--Error 9   the attribute "scr" in the <img> tag should be "src"  -->
+        <!--Error 9   the <img> tag is missign the alt="" attribute,  -->
+        <!--Error 10  beginning <strong> tag missing, should be <strong>Nam id magna lectus.</strong>  -->
+        <!--Error 11  <h2><em>My Headline 2!</h2></em> should be <h2><em>My Headline 2!</em></h2> -->
+        <!--Error 12  <h > should be <hr>  -->
+        <!--Error 13  none of the <li> tags have an enging </li> tag  -->
+        <!--Error 14  begining <ul> tag improperly closed with ending </em> tag when it should be an ending </ul> tag -->
+
+        <a href="https://validator.w3.org/#validate_by_uri+with_options"></a>
+
+    </div>
+
+</body>
+</html>

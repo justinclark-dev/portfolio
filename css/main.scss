@@ -16,7 +16,7 @@ body {
 }
 
 .wrapper {
-    max-width: 940px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -90,6 +90,75 @@ main {
     }
 }
 
+.button {
+    display: block;
+    color: $dark-blue;
+    background: #ddd;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+}
+  
+.call-to-action {
+    padding: 8px 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 2em 0;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    img {
+        width: 95%;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    main {
+        min-height: 400px;
+    }
+
+    a.button {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+  
+        span {
+            z-index: 2;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    a.call-to-action {
+        font-size: 1.2em;
+        padding: .8em 3em;
+    }
+
+    a.button:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        top: 0;
+        left: 0;
+        clip-path: circle(100% at 50% 50%);
+        transition: clip-path .6s ease-in-out;
+    }
+
+    a.button:hover:before {
+        clip-path: circle(0%);
+    }
+}
+
 .footer-wrapper {
     background: $dark-blue;
     height: 300px;
@@ -108,18 +177,31 @@ main {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
     .hero-bg {
+        min-height: 190px;
+        height: auto;
+        h1 {
+            font-size: 2.4em;
+            margin-top: 1.4em;
+        }
     
-        img {
-            display: none;
+        p {
+            font-size: 1.2em;
+            margin-top: -1.5em;
         }
     }
 }
 
 @media only screen and (max-width: 900px) {
 
+    .hero-bg {
+        img {
+            display: none;
+        }
+    }
+    
     /* fix navigation */
     
 }

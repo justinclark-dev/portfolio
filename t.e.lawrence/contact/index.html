@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.E. Lawrence Photography | Contact</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="body-background-canyon body-background">
+
+    <div class="grid-container">
+        
+        <header>
+            <a href="../" id="logo">T.E. Lawrence</a>
+
+            <div class="menu-toggle" id="menu-toggler" onclick="toggle()">
+                <div class="menu-toggle-bar"></div>
+                <div class="menu-toggle-bar"></div>
+                <div class="menu-toggle-bar"></div>
+            </div>
+            
+            <nav>
+                <ul id="slider" class="slider-closed">
+                    <li><a href="../gallery">gallery</a></li>
+                    <li><a href="../about">about</a></li>
+                    <li><a href="../clients">clients</a></li>
+                    <li><a href="../contact" class="active">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero hero-contact">
+                <div class="call-to-action body-background blur-inner" id="contact-container">
+                        
+                    <h1>Contact</h1>
+                    <p><span class="span1">Nothing is written... </span><span class="span2">until you write it.</span></p>
+                    
+                    <div class="form-container">
+                        <div class="row">
+                            <div class="column">
+                                <img src="../images/Lawrence_of_Arabia.jpg" alt="Painting of Lawrence of Arabia by Augustus John">
+                                <!-- Image is Public Domain: https://en.wikipedia.org/wiki/T._E._Lawrence#/media/File:Painting_of_Lawrence_of_Arabia_by_Augustus_John.jpg -->
+                            </div>
+
+                            <div class="column">
+                                <form action="#" onsubmit="fauxSend()">
+                                    <input type="text" name="first_name" id="first_name" placeholder="First name..">
+                                    <input type="text" name="last_name" id="last_name" placeholder="Last name..">
+                                    <input type="email" name="email" id="email" placeholder="Email..">
+                                    <textarea id="message" name="message" placeholder="Message.."></textarea>
+                                    <input type="submit" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <ul class="footer-links">
+                <li>
+                    <a href="../../../">&copy; 2020 Justin Clark</a>
+                </li> 
+                <li>
+                    <a href="https://validator.w3.org/check?uri=referer">
+                        <img src="../images/HTML5-White.svg" alt="HTML5 Valid Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pixabay.com/">Images by Pixabay</a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="../js/nav-slider.js"></script>
+    <script src="../js/send-message.js"></script>
+
+</body>
+</html>

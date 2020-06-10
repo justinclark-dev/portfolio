@@ -1,0 +1,993 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');       
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap');
+
+$header-text-shadow: 2px 2px rgb(199, 199, 199);
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, .grid-container {
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.hero > .call-to-action.body-background-desert.body-background {
+    height: 60vh;
+    margin: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-background-desert {background: url('../images/desert-4940300_1280.jpg');}
+.body-background-sand {background: url('../images/desert-1654439_1280.jpg');}
+.body-background-cyprus {background: url('../images/cyprus-4030808_1280.jpg');}
+.body-background-canyon {background: url('../images/canyon-4245261_1280.jpg');}
+
+.body-background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, footer {
+    background-color: white;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+header {
+    height: 48px;
+    line-height: 48px;
+    z-index: 10;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+#logo, .logo {
+    font-family: 'Dr Sugiyama', cursive;
+    font-size: 2em;
+}
+
+#logo {
+    font-size: 1.5em;
+    position: relative;
+    top: 4px;
+}
+
+.menu-toggle {
+    width:32px;
+    cursor: pointer;
+    z-index: 15;
+    vertical-align: middle;
+    right: 1em;
+    top: 1em;
+    position: absolute;
+
+    .menu-toggle-bar {
+      border-top: solid 3px black;
+      padding: 3px;
+  }
+}
+
+.toggle-open {
+    position: fixed;
+}
+
+#slider {
+    position: fixed;
+    display: block;
+    background: white;
+    width: 50%;
+    right: 0;
+    top: -20px;
+    padding-top: 68px;
+    height: calc(100vh + 10px);
+    z-index: 10;
+}
+
+#slider ul {
+    display: none;
+}
+
+.slider-open {
+    opacity: .95;
+    transform: translateX(0%);
+    transition: all .5s ease-in-out;
+}
+.slider-closed {
+    opacity: .5;
+    transform: translateX(100%);
+    transition: all .5s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    padding-right: 1em;
+}
+
+nav a {
+    text-transform: uppercase;
+    height: 64px;
+}
+
+nav a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    text-align: right;
+}
+
+.blur-inner {
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,.85);
+    margin: 4em 2em;
+    padding: 2em 0;
+}
+
+footer {
+    z-index: 5;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 44px;
+}
+
+footer li {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer li a {
+    text-decoration: none;
+    color: black;
+    font-size: smaller;
+}
+
+footer li a img {
+    height: 44px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-to-action h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; 
+}
+
+.call-to-action > h1, h2, .logo {
+    text-align: center;
+}
+
+.call-to-action > .action {
+    margin: 2em ;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+// About  ---------------------------------------------- //
+.call-to-action p {
+    padding: 0 2em;
+}
+
+// Clients ---------------------------------------------- //
+.call-to-action .offset-list ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.call-to-action .offset-list li {
+    line-height: 1.2em;
+    padding-top: 1.2em;
+}
+
+.call-to-action ul:nth-child(even) {
+    margin-bottom: 4em;
+}
+
+// Contact ---------------------------------------------- //
+.call-to-action .form-container {
+    padding: 10px;
+}
+
+.call-to-action .column {
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.call-to-action {
+    img {
+        padding-top: 6px;
+        width: 100%;
+    }
+}
+
+.call-to-action input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+}
+
+.call-to-action input[type=submit] {
+    background-color: rgba(22,22,22,.9);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+}
+
+.call-to-action textarea {
+    height: 220px;
+}
+
+.button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 8px 50px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.action {
+    margin: 2em 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    background: rgba(22,22,22,.5);
+    color: white;
+}
+
+// Gallery ---------------------------------------------- //
+.img1 {background: url('../images/antelope-canyon-1128815_400.jpg');}
+.img2 {background: url('../images/canyon-4245261_400.jpg');}
+.img3 {background: url('../images/cyprus-4030808_400.jpg');}
+.img4 {background: url('../images/forest-931706_400.jpg');}
+.img5 {background: url('../images/landscape-615429_400.jpg');}
+.img6 {background: url('../images/molten-1084181_400.jpg');}
+.img7 {background: url('../images/rock-wall-1845128_400.jpg');}
+.img8 {background: url('../images/sandstone-467714_400.jpg');}
+.img9 {background: url('../images/spring-276014_400.jpg');}
+.img10 {background: url('../images/startrails-918551_400.jpg');}
+.img11 {background: url('../images/sunset-3325080_400.jpg');}
+.img12 {background: url('../images/tree-838667_400.jpg');}
+.img13 {background: url('../images/yellowstone-national-park-1581879_400.jpg');}
+.img14 {background: url('../images/turret-arch-1364314_400.jpg');}
+.img15 {background: url('../images/fog-1535201_400.jpg');}
+.img16 {background: url('../images/desert-1654439_400.jpg');}
+
+.gallery {
+    background: white;
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    .image-outer {
+        height: 33vh;
+        padding: 8px 16px;
+    }
+    .image-inner {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+// Gallery Image Viewer ---------------------------------------------- //
+.buttons {
+    .close, .forward, .back, .expand, .collapse {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    
+    // Gallery ---------------------------------------------- //
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-row-gap: 1em; 
+        grid-column-gap: 1em;
+
+        .image-outer {
+            padding: initial;
+            overflow: hidden; 
+            height: 33  vh;
+        }
+    }
+
+    // Contact ---------------------------------------------- //
+    .call-to-action .column {
+        float: left;
+        width: 50%;
+    }
+
+    .call-to-action .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .call-to-action {
+        img {
+            padding-top: 6px;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {  
+
+    .body-background-desert {background: url('../images/desert-4940300_1920.jpg');}
+    .body-background-sand {background: url('../images/desert-1654439_1920.jpg');}
+    .body-background-cyprus {background: url('../images/cyprus-4030808_1920.jpg');}
+    .body-background-canyon {background: url('../images/canyon-4245261_1920.jpg');}
+    
+    .body-background {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+            
+    @keyframes BlurAnimation { 
+        0% { 
+            filter: blur(0);
+        } 
+        100% { 
+            filter: blur(8px);
+        }
+    }
+
+    @keyframes fadeInAnimation { 
+        0% { 
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+        } 
+    }
+
+    // Layout only ---------------------------------------------- //
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 4em 1fr 4em;
+        grid-template-areas:
+            ' header header header '
+            ' main main main '
+            ' footer footer footer ';
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    // Styles start here ---------------------------------------------- //
+    header, footer {
+        height: 64px;
+        line-height: 64px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo {
+        font-size: 2em;
+    }
+
+    #logo:hover {
+        text-shadow: $header-text-shadow;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    #slider {
+        position: inherit;
+        display: flex;
+        background: inherit;
+        width: inherit;
+        right: inherit;
+        top: inherit;
+        padding-top: inherit;
+        height: inherit;
+        z-index: inherit;
+    }
+
+    .slider-open {
+        opacity: inherit;
+        transform: inherit;
+        transition: inherit;
+    }
+    .slider-closed {
+        opacity: inherit;
+        transform: inherit;
+        transition: inherit;
+    }
+
+    nav ul {
+        display: flex;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    nav li {
+        padding-right: 0;
+        padding-left: 2em;
+    }
+    
+    nav a:hover {
+        text-shadow: $header-text-shadow;
+    }
+
+    nav a::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        border: 4px solid;
+        transition: all 0.4s ease-in-out;
+        bottom: -4px;
+        left: -10px;
+        background: rgb(199, 199, 199);
+        border-color: transparent;
+        z-index: 15;
+    }
+
+    nav a.active::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        border: 4px solid;
+        bottom: -4px;
+        left: 0;
+        background: black;
+        border-color: transparent;
+        z-index: 10;
+    }
+
+    nav a:hover:after {
+        width: calc(100% + 10px);
+        z-index: 15;
+    }
+
+    body.body-background-blur:before {
+        content: '';
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background: url('../images/desert-4940300_1920.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    body.body-background-blur:before { 
+        animation: BlurAnimation ease 4s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards; 
+        animation-delay: 1s;
+    } 
+
+    .blur-inner {
+        margin: initial;
+        padding: initial;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas:
+            ' . . . '
+            ' . call-to-action . '
+            ' . . . ';
+    }
+
+    .hero-large {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 4em 2fr 4em;
+        grid-template-areas:
+            ' . . . '
+            ' . call-to-action . '
+            ' . . . ';
+    }
+
+    .hero-contact {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 3em 1fr 3em;
+        grid-template-areas:
+            ' . . . '
+            ' . call-to-action . '
+            ' . . . ';
+    }
+
+    .call-to-action {
+        grid-area: call-to-action;
+    }
+
+    .hero > .call-to-action.body-background-desert.body-background {
+        height: initial;
+        margin: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .call-to-action {
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 20px black;
+        opacity: 0;
+        transition: opacity;
+        animation: fadeInAnimation ease-in-out 4s; 
+        animation-fill-mode: forwards; 
+    }
+
+    .call-to-action > * {
+        opacity: 0;
+        z-index: 15;
+        animation: fadeInAnimation ease-in-out 2s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;
+        cursor: default;
+    }
+
+    .call-to-action h1 {
+        font-size: 3em;
+        animation-delay: 1.5s;
+    }
+
+    // About  ---------------------------------------------- //
+    .call-to-action h2 {
+        animation-delay: 2.5s;
+    }
+
+    .call-to-action p {
+        padding: 0 5em;
+    }
+
+    .call-to-action .p1 {animation-delay: 3.5s;}
+    .call-to-action .p2 {animation-delay: 4.5s;}
+    .call-to-action .p3 {animation-delay: 5.5s;}
+    .call-to-action .p4 {animation-delay: 6.54s;}
+    .call-to-action .p5 {animation-delay: 7.5s;}
+
+    // Clients ---------------------------------------------- //
+    .call-to-action .offset-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: ' left-list right-list ';
+    }
+
+    .call-to-action .offset-list li {
+        line-height: initial;
+        padding-top: initial;
+        margin-top: 1.2em;
+        opacity: 0;
+        z-index: 15;
+        animation: fadeInAnimation ease-in-out 2s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;
+    }
+
+    .call-to-action ul:nth-child(odd) {
+        grid-area: left-list;
+        text-align: right;
+        line-height: 1.2em;
+        li:nth-child(1) {animation-delay: 2.5s;}
+        li:nth-child(2) {animation-delay: 4.5s;}
+        li:nth-child(3) {animation-delay: 6.5s;}
+        li:nth-child(4) {animation-delay: 8.5s;}
+    }
+
+    .call-to-action ul:nth-child(even) {
+        grid-area: right-list;
+        padding-inline-start: 0;
+        text-align: left;
+        position: relative;
+        padding-top: 1.2em;
+        li:nth-child(1) {animation-delay: 3.5s;}
+        li:nth-child(2) {animation-delay: 5.5s;}
+        li:nth-child(3) {animation-delay: 7.5s;}
+    }
+
+    // Contact ---------------------------------------------- //
+    .call-to-action span, .call-to-action img, .call-to-action form, .call-to-action h2.message-sent {
+        opacity: 0;
+        z-index: 15;
+        animation: fadeInAnimation ease-in-out 2s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;
+    }
+
+    .call-to-action .span1 { animation-delay: 2.5s; }
+    .call-to-action .span2 { animation-delay: 3.5s; }
+    .call-to-action img { animation-delay: 4.5s; }
+    .call-to-action form { animation-delay: 5.5s; }
+    .call-to-action h2.message-sent { animation-delay: .0s; }
+
+    .call-to-action .column {
+        float: left;
+        width: 50%;
+    }
+
+    .call-to-action .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .call-to-action {
+        img {
+            padding-top: 6px;
+        }
+    }
+
+    .call-to-action input[type=submit] {
+        cursor: pointer;
+    }
+
+    .call-to-action input[type=submit]:hover {
+        transition: all .2s ease-in-out;
+        background-color: rgba(22,22,22,.7);
+    }
+
+    .call-to-action > .action {
+        border: none;
+        border-radius: 0;
+    }
+
+    .action {
+        width: initial;
+        background: transparent;
+        color: black;
+        opacity: 0;
+        z-index: 15;
+        animation: fadeInAnimation ease-in-out 2s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards; 
+        animation-delay: 3s;
+    }
+
+    .action::after, .action::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 5%;
+        height: 20%;
+        border: 2px solid;
+        transition: all 0.6s ease;
+    }
+
+    .action::after {
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: black;
+        border-right-color: black;
+    }
+
+    .action::before {
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: black;
+        border-left-color: black;
+    }
+
+    .action:hover:after, .action:hover:before {
+        width: 100%;
+        height: 100%;
+    }
+
+    .action:active {
+        background: rgba(22,22,22,.5);
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+    footer ul {
+        flex-direction: row;
+        line-height: 63px;
+    }
+
+    // Gallery ---------------------------------------------- //
+    .img1 {background: url('../images/antelope-canyon-1128815_640.jpg');}
+    .img2 {background: url('../images/canyon-4245261_640.jpg');}
+    .img3 {background: url('../images/cyprus-4030808_640.jpg');}
+    .img4 {background: url('../images/forest-931706_640.jpg');}
+    .img5 {background: url('../images/landscape-615429_640.jpg');}
+    .img6 {background: url('../images/molten-1084181_640.jpg');}
+    .img7 {background: url('../images/rock-wall-1845128_640.jpg');}
+    .img8 {background: url('../images/sandstone-467714_640.jpg');}
+    .img9 {background: url('../images/spring-276014_640.jpg');}
+    .img10 {background: url('../images/startrails-918551_640.jpg');}
+    .img11 {background: url('../images/sunset-3325080_640.jpg');}
+    .img12 {background: url('../images/tree-838667_640.jpg');}
+    .img13 {background: url('../images/yellowstone-national-park-1581879_640.jpg');}
+    .img14 {background: url('../images/turret-arch-1364314_640.jpg');}
+    .img15 {background: url('../images/fog-1535201_640.jpg');}
+    .img16 {background: url('../images/desert-1654439_640.jpg');}
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-row-gap: 1em; 
+        grid-column-gap: 1em;
+
+        .image-outer {
+            padding: initial;
+            overflow: hidden; 
+            opacity: 0;
+            animation: fadeInAnimation ease-in-out 1s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards;
+        }
+        .image-inner {
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+        .image-inner:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    // Gallery Image Viewer ---------------------------------------------- //
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+
+        .close, .forward, .back, .expand, .collapse {
+            z-index: 25;
+            cursor: pointer;
+            display:  block;
+            opacity: 0;
+
+            img {
+                position:absolute;
+                height: 32px;
+            }
+        }
+
+        .forward, .back {
+            img {
+                top:50%;
+            }
+        }
+
+        .expand, .collapse {
+            img {
+                bottom: 84px;
+                right:20px;
+            }
+        }
+
+        .close {
+            img { 
+                top: 84px; 
+                right: 20px;
+            }
+        }
+        
+        .forward {
+            img {
+                right:30px;
+            }
+        }
+        
+        .back {
+            img {
+                left:35px;
+            }
+        }
+
+        .expand {
+            img {
+                visibility: visible;
+            }
+        }
+        
+        .collapse {
+            img {
+                visibility: hidden;
+            }
+        }
+    }
+
+    button  {
+        /* button reset code (chrome) */
+        -webkit-appearance: inherit;
+        -webkit-writing-mode: inherit;
+        text-rendering: inherit;
+        color: inherit;
+        letter-spacing: inherit;
+        word-spacing: inherit;
+        text-transform: inherit;
+        text-indent: inherit;
+        text-shadow: inherit;
+        display: inherit;
+        text-align: inherit;
+        align-items: inherit;
+        cursor: inherit;
+        background-color: inherit;
+        box-sizing: inherit;
+        margin: inherit;
+        font: inherit;
+        padding: inherit;
+        border-width: inherit;
+        border-style: inherit;
+        border-color: inherit;
+        border-image: inherit;
+    }
+
+    #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.9);
+        z-index: 2;
+    }
+
+    .overlay-image-container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr; 
+        grid-template-rows: 1fr 3fr 1fr; 
+        grid-template-areas:
+            ' . . . '
+            ' . overlay-outer . '
+            ' . . . ';
+    }
+
+    #overlay-outer {
+        grid-area: overlay-outer;
+        background: white;
+        padding: 16px;
+    }
+
+    #overlay-inner {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+    }
+
+    .animate-viewer {
+        opacity: 0;
+        animation: fadeInAnimation ease-in-out .7s; 
+        animation-fill-mode: forwards;
+    }
+
+    // gallery full-screen image ---------------------------------------------- //
+    .full-screen {
+
+        .overlay-image-container {
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr; 
+        }
+
+        #overlay-outer {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .expand {
+            img {
+                visibility: hidden;
+            }
+        }
+
+        .collapse {
+            img {
+                visibility: visible;
+            }
+        }
+    }
+
+    .no-scroll {
+        height: 100%;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (min-width: 1200px) { 
+
+    // Contact ---------------------------------------------- //
+    .hero-contact {
+        grid-template-columns: 1fr 1.5fr 1fr;
+    }
+
+}

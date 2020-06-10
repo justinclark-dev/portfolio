@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.E. Lawrence Photography | Gallery</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <div class="grid-container">
+        
+        <header>
+            <a href="../" id="logo">T.E. Lawrence</a>
+
+            <div class="menu-toggle" id="menu-toggler" onclick="toggle()">
+                <div class="menu-toggle-bar"></div>
+                <div class="menu-toggle-bar"></div>
+                <div class="menu-toggle-bar"></div>
+            </div>
+            
+            <nav>
+                <ul id="slider" class="slider-closed">
+                    <li><a href="../gallery" class="active">gallery</a></li>
+                    <li><a href="../about">about</a></li>
+                    <li><a href="../clients">clients</a></li>
+                    <li><a href="../contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="overlay">
+                <div class="overlay-image-container">
+                    
+                    <div class="buttons">
+    
+                        <button class="animation-selector animate-viewer forward" id="forward">
+                            <img src="./../images/forward.svg" alt="Next image">
+                        </button>
+                        
+                        <button class="animation-selector animate-viewer back" id="back">
+                            <img src="./../images/back.svg" alt="Last image">
+                        </button>
+
+                        <button class="animation-selector animate-viewer close" id="close">
+                            <img src="./../images/close.svg" alt="Close image">
+                        </button>
+
+                        <button class="animation-selector animate-viewer expand" id="expand">
+                            <img src="./../images/expand.svg" alt="Expand image">
+                        </button>
+
+                        <button class="animation-selector animate-viewer collapse" id="collapse">
+                            <img src="./../images/collapse.svg" alt="Collapse image">
+                        </button>
+
+                    </div>
+
+                    <div id="overlay-outer">
+                        <div id="overlay-inner" class="animate-viewer"></div>
+                    </div>              
+                    
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="image-outer">
+                    <div class="image-inner img1" id="img1"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img2" id="img2"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img3" id="img3"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img4" id="img4"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img5" id="img5"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img6" id="img6"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img7" id="img7"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img8" id="img8"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img9" id="img9"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img10" id="img10"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img11" id="img11"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img12" id="img12"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img13" id="img13"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img14" id="img14"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img15" id="img15"></div>
+                </div>
+                <div class="image-outer">
+                    <div class="image-inner img16" id="img16"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <ul class="footer-links">
+                <li>
+                    <a href="../../../">&copy; 2020 Justin Clark</a>
+                </li> 
+                <li>
+                    <a href="https://validator.w3.org/check?uri=referer">
+                        <img src="../images/HTML5-White.svg" alt="HTML5 Valid Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pixabay.com/">Images by Pixabay</a>
+                </li>
+            </ul>
+        </footer>
+
+      </div>
+
+      <script src="../js/nav-slider.js"></script>
+      <script src="./../js/image-overlay-viewer.js"></script>
+
+</body>
+</html>

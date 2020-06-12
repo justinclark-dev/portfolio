@@ -62,7 +62,7 @@ header {
     position: relative;
 
     img {
-        right: 0;
+        right: $side-margin;
         bottom: 0;
         position: absolute;
     }
@@ -101,17 +101,18 @@ main {
   
 .call-to-action {
     padding: 8px 50px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     margin: 2em 0;
 }
 
 .img-wrapper {
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
     img {
-        width: 95%;
+        width: 100%;
         border-radius: 15px;
     }
 }
@@ -120,6 +121,18 @@ main {
 
     main {
         min-height: 300px;
+    }
+
+    .img-wrapper {
+        flex-direction: row;
+        
+        img {
+            position: relative;
+        }
+    }
+
+    .img-wrapper :nth-child(2) {
+        padding: 0 20px;
     }
 
     a.button {
@@ -192,9 +205,10 @@ main {
             margin-top: -1.5em;
         }
     }
+
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 
     .hero-bg {
         img {

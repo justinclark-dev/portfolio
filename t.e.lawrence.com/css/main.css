@@ -732,7 +732,6 @@ footer li a img {
             animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    cursor: default;
   }
   .call-to-action h1 {
     font-size: 3em;
